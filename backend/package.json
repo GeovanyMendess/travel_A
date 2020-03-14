@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/GeovanyMendess/travel_A.git",
+  "author": "<geovany.c.mendes@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "travel": "nodemon index.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

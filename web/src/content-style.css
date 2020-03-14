@@ -1,0 +1,107 @@
+
+.intern-content {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 70px;
+}
+
+.form-block {
+  max-width: 100%;
+  margin-left: 100px;
+}
+
+.form-block h3 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form-block label {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+}
+
+.form-block input {
+  display: block;
+  width: 100%;
+  height: 32px;
+  font-size: 14px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.last-block-info {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.last-block-info > .input-block{
+  max-width: 150px;
+} 
+
+.last-block-info > :nth-child(2) {
+  margin-left: 15px;
+}
+
+.last-block-info > :nth-child(3) {
+  margin-left: 15px;
+}
+
+button[type="submit"] {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  margin: 50px auto 0 auto;
+  padding: 10px 30px;
+  background: #0066ff;
+  border: 3px solid #0066ff;
+  border-radius: 3px;
+}
+button[type="submit"]:hover {
+  color: #0066ff;
+  background: none;
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
+
+.about-us {
+  color: #0f0f0f;
+  max-width: 100%;
+  margin-left: 100px;
+}
+
+.about-us h1 {
+  margin-bottom: 15px;
+}
+
+.about-us img {
+  width: 276px;
+  height: 196px;
+  margin-top: 50px;
+}
+
+@media (max-width: 859px){
+  .intern-content {
+    grid-template-columns: 1fr;
+  }
+  .form-block {
+    margin-left: 0;
+  }
+  .about-us {
+    color: #0f0f0f;
+    max-width: 100%;
+    margin: 50px 0 0 0;
+  }
+  .about-us h1 {
+    text-align: center;
+  }
+  .about-us img {
+    margin: 25px auto 0 auto;
+  }
+}
