@@ -5,10 +5,10 @@ const mongoose = require('mongoose');
 const travelSchema = new mongoose.Schema ({
   name: String,
   phone: Number,
-  dateFrom: Date,
-  dateTo: Date,
   origin: String,
   destination: String,
+  dateFrom: Date,
+  dateTo: Date,
   numberOfPeople: Number,
 });
 

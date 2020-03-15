@@ -13,10 +13,10 @@ module.exports = {
     const {
       name,
       phone,
-      dateFrom,
-      dateTo,
       origin,
       destination,
+      dateFrom,
+      dateTo,
       numberOfPeople,
     } = request.body;
 
@@ -37,10 +37,10 @@ module.exports = {
       travelEnt = await travel.create({
         name,
         phone,
-        dateFrom,
-        dateTo,
         origin,
         destination,
+        dateFrom,
+        dateTo,
         numberOfPeople,
       });
     }

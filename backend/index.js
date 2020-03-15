@@ -1,6 +1,7 @@
 // imported libraries
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const routes = require('./routes')
 
 // initializing aplication
@@ -18,6 +19,7 @@ app.get('/', (request, response)=> {
 
 // Midlleware managers
 // This allow the aplication understand the the JSON format
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 
