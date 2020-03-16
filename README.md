@@ -10,11 +10,11 @@
 
 ### Installing
 
-Clone the repository
+Clone the repository.
 ``git clone https://github.com/GeovanyMendess/project_travel_A.git``
 ``cd project_travel_A``
 
-and install the dependencies using
+Install the dependencies using:
 ``$ yarn``
 
 ### Running front-end
@@ -23,9 +23,9 @@ and install the dependencies using
 $ cd web
 $ yarn start
 ```
-Then the browser will automatically acess the homepage by a default door
+Then the browser will automatically acess the homepage by a default door.
 
-Now open a new prompt at project_travel_A and use
+Now open a new prompt at project_travel_A and use:
  ```
  $ cd backend
  $ yarn travel
