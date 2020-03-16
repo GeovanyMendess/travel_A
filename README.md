@@ -29,9 +29,16 @@ Now open a new prompt at project_travel_A and use
  $ yarn travel
  ```
 
-**IMPORTANT: You must keep both propts running**
+**IMPORTANT: You must keep both prompts running**
 
-Then use the web interface at the navigator  
+Then use the web interface at the navigator to fill the forms.
+
+### Acessing database
+
+Initialize mongo DB compass and use option connect. Use the following code to acess the database:
+'mongodb+srv://visitor:A8DJaAMCgAg4WZP@cluster0-siiem.gcp.mongodb.net/test' 
+
+The information is stored at test/travels;
 
 
 
