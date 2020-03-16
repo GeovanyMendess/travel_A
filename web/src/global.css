@@ -87,6 +87,7 @@ footer ul li:nth-child(2) {
   margin-left: 10px;
 }
 
+/* Mobile and tablets */
 @media (max-width: 874px) {
   header {
     display: flex;

@@ -4,12 +4,12 @@ const mongoose = require('mongoose');
 
 const travelSchema = new mongoose.Schema ({
   name: String,
-  phone: Number,
+  phone: String,
   origin: String,
   destination: String,
   dateFrom: Date,
   dateTo: Date,
-  numberOfPeople: Number,
+  people: Number
 });
 
 module.exports = mongoose.model('travel', travelSchema);

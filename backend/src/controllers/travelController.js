@@ -17,7 +17,7 @@ module.exports = {
       destination,
       dateFrom,
       dateTo,
-      numberOfPeople,
+      people
     } = request.body;
 
     // Creating date objects
@@ -27,12 +27,16 @@ module.exports = {
     // same destination is an arbitrary number, in this case 100
 
     // Finding all travels with the features above
-
     let travelEnt = await travel.findOne({
-      phone
+      name,
+      phone,
+      origin,
+      destination,
+      dateFrom,
+      dateTo,
     });
 
-    // Validation of the element
+    // Validation of the element to avoid duplicate values
     if (!travelEnt) {
       travelEnt = await travel.create({
         name,
@@ -41,7 +45,7 @@ module.exports = {
         destination,
         dateFrom,
         dateTo,
-        numberOfPeople,
+        people
       });
     }
     return response.json(travelEnt);
