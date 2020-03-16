@@ -4,6 +4,7 @@ import masks from './utils/masks';
 import DatePicker from './DatePicker';
 import moment from 'moment';
 import { useHistory } from 'react-router-dom';
+import NumberFormat from 'react-number-format';
 
 export default function Form() {
 
@@ -16,7 +17,6 @@ export default function Form() {
   const [dateTo, setDateTo] = useState('');
   const [people, setPeople] = useState('');
   const [today, setToday] = useState(moment().format('YYYY[-]MM[-]DD'));
-  const [auth, setAuth] = useState(false);
 
   let history = useHistory();
 
@@ -56,17 +56,11 @@ export default function Form() {
 
       <div className="input-block">
         <label>Phone</label>
-        <input name="phone" 
-        id="phone"
-        type="tel"
-        required
-        placeholder="99 9999-9999"
-        min="14"
-        max="15"
-        value={phone}
-        onChange = {e=>setPhone(masks.maskPhone(e.target.value))}
-        >
-        </input>
+        <NumberFormat 
+        format="+55 (##) ####-####" 
+        allowEmptyFormatting 
+        onChange = {e=> setPhone((e.target.value))}
+        mask="_"/>
       </div>
 
       <div className="input-block">

@@ -53,6 +53,12 @@ header h2 {
   margin-right: 150px;
 }
 
+/* Input warnings */
+
+form input:invalid {
+  box-shadow: none;
+}
+
 /* Footer */
 
 footer {
