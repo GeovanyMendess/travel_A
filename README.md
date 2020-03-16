@@ -38,9 +38,9 @@ Then use the web interface at the navigator to fill the forms.
 ### Acessing database
 
 Initialize mongo DB compass and use option connect. Use the following code to acess the database:
-'mongodb+srv://visitor:A8DJaAMCgAg4WZP@cluster0-siiem.gcp.mongodb.net/test' 
+'mongodb+srv://visitor:A8DJaAMCgAg4WZP@cluster0-siiem.gcp.mongodb.net/test'. 
 
-The information is stored at test/travels;
+The information is stored at DB test.
 
 
 
