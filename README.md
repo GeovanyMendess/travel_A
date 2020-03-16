@@ -10,11 +10,11 @@
 
 ### Installing
 
-Clone the repository
+Clone the repository.
 ``git clone https://github.com/GeovanyMendess/project_travel_A.git``
 ``cd project_travel_A``
 
-and install the dependencies using
+Install the dependencies using:
 ``$ yarn``
 
 ### Running front-end
@@ -23,9 +23,9 @@ and install the dependencies using
 $ cd web
 $ yarn start
 ```
-Then the browser will automatically acess the homepage by a default door
+Then the browser will automatically acess the homepage by a default door.
 
-Now open a new prompt at project_travel_A and use
+Now open a new prompt at project_travel_A and use:
  ```
  $ cd backend
  $ yarn travel
@@ -38,9 +38,9 @@ Then use the web interface at the navigator to fill the forms.
 ### Acessing database
 
 Initialize mongo DB compass and use option connect. Use the following code to acess the database:
-'mongodb+srv://visitor:A8DJaAMCgAg4WZP@cluster0-siiem.gcp.mongodb.net/test' 
+'mongodb+srv://visitor:A8DJaAMCgAg4WZP@cluster0-siiem.gcp.mongodb.net/test'. 
 
-The information is stored at test/travels;
+The information is stored at DB test.
 
 
 
