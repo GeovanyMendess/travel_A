@@ -1,3 +1,5 @@
+// Axios allow the comunication with api's.
+// In this case with mongoose
 import axios from 'axios';
 
 const api = axios.create({

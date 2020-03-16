@@ -1,13 +1,7 @@
 const travel = require('../models/travel');
 
 module.exports = {
-  // async will allow to force await the request ends until the next step
-
-  // listing itens and returning 
-  // async index(request, response) {
-  //   const travelData = await travel.find();
-  //   return response.json(travelData);
-  // },
+  //Async will allow to force await the request ends until the next step
 
   async store(request, response) {
     const {
@@ -20,12 +14,6 @@ module.exports = {
       people
     } = request.body;
 
-    // Creating date objects
-
-
-    // Assuming the limit travelers to the same day, from the same origin and to the 
-    // same destination is an arbitrary number, in this case 100
-
     // Finding all travels with the features above
     let travelEnt = await travel.findOne({
       name,
@@ -37,6 +25,8 @@ module.exports = {
     });
 
     // Validation of the element to avoid duplicate values
+    // But it allows the user to register a same travel, but with
+    // a different number of travelers
     if (!travelEnt) {
       travelEnt = await travel.create({
         name,

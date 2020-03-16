@@ -1,3 +1,4 @@
+// Main page component
 import React from 'react';
 import './App.css';
 import './global.css';

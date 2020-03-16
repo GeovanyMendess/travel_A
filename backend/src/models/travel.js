@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
-// model of travel entity to Mongo DB
-
+// Model of travel entity to Mongo DB
 const travelSchema = new mongoose.Schema ({
   name: String,
   phone: String,
@@ -12,4 +11,5 @@ const travelSchema = new mongoose.Schema ({
   people: Number
 });
 
+// Exporting the model
 module.exports = mongoose.model('travel', travelSchema);
