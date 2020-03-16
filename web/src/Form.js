@@ -65,6 +65,8 @@ export default function Form() {
           <label htmlFor="name">Name</label>
           <input name="name" 
           id="name"
+          type="text"
+          pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
           required
           value={name}
           onChange = {e => setName(masks.maskName(e.target.value))}
@@ -90,6 +92,8 @@ export default function Form() {
       <div className="input-block">
         <label>Origin</label>
         <input name="origin" 
+        type="text"
+        pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
         id="origin"
         required
         value={origin}
@@ -102,6 +106,8 @@ export default function Form() {
         <label>Destination</label>
         <input name="destination" 
         id="destination"
+        type="text"
+        pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
         required
         value={destination}
         onChange = {e=> setDestination(masks.maskName(e.target.value))}
@@ -111,7 +117,7 @@ export default function Form() {
       {/* Last row input */}
       <div className="last-block-info">
 
-        {/* Date drom input */}
+        {/* Date from input */}
         <div className="input-block date-info">
           <label>Date From</label>
           <DatePicker name="dateFrom" 
