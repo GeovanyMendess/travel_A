@@ -11,9 +11,11 @@
 ### Installing
 
 Clone the repository
-'git clone https://github.com/GeovanyMendess/project_travel_A.git'
-Then
-'cd project_travel_A'
+``git clone https://github.com/GeovanyMendess/project_travel_A.git``
+``cd project_travel_A``
+
+and install the dependencies using
+``$ yarn``
 
 ### Running front-end
 
