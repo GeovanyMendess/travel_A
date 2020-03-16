@@ -24,7 +24,10 @@ export default function Form() {
   const [visible, setVisible] = useState(false);
 
 
+  // Redirect to sucess page
   let history = useHistory();
+
+  // Function to set vibility of alert box
   function onDmiss(){
     setVisible(false);
   }
