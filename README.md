@@ -18,14 +18,16 @@ Then
 ### Running front-end
 
 ```
-cd web
-yarn start
+$ cd web
+$ yarn start
 ```
 Then the browser will automatically acess the homepage by a default door
 
 Now open a new prompt at project_travel_A and use
-'cd backend'
-'yarn travel'
+ ```
+ cd backend
+ yarn travel
+ ```
 
 **IMPORTANT: You must keep both propts running**
 
