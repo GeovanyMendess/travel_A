@@ -23,13 +23,15 @@ $ cd project_travel_A
 Install the dependencies in each repository, backend and frontend,  using:
 `$ yarn`
 
-### Running front-end
+### Running frontend
 
 ```
 $ cd web
 $ yarn start
 ```
 Then the browser will automatically acess the homepage by a default door.
+
+### Running backend
 
 Now open a new prompt at project_travel_A and use:
  ```
