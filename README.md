@@ -20,8 +20,8 @@ $ git clone https://github.com/GeovanyMendess/project_travel_A.git
 $ cd project_travel_A
 ```
 
-Install the dependencies using in each repository, backend and frontend:
-``$ yarn``
+Install the dependencies in each repository, backend and frontend  using:
+`$ yarn`
 
 ### Running front-end
 
