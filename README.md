@@ -1,5 +1,8 @@
 # travel_A
 
+##Description
+This aplication allows the creation of travels and save them into the mongoDB database
+
 ## Guide to run aplication at developer mode
 
 ### Prerequisites
