@@ -8,7 +8,7 @@ const routes = require('./routes')
 const app = express();
 
 // connectiing to database
-mongoose.connect('mongodb+srv://Geovany:7wf3e23QYyEP7st@cluster0-siiem.gcp.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect('Replace by your mongoDB connection server.', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
